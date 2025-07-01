@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer’s information</title>
+</head>
+<!-- Create an HTML page to accept customer’s information for the following with appropriate form
+elements: Customer Name, Address, Gender, Languages known, City, and to submit and clear
+the contents. -->
+
+<body>
+    <h2 align="center">Customer Information Form
+    </h2>
+    <fieldset>
+        <legend align="center"><b>Personal Details</b></legend>
+        <form action="">
+            <label for="name"><b>Customer Name:</b></label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="Address"><b>Address:</b></label><br>
+            <textarea name="Address" id="Address" rows="2" cols="30" required></textarea>
+    </fieldset>
+    <fieldset>
+        <legend align="center"><b>Additional Information</b></legend>
+
+        <b>Gender:</b><br>
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Male" value="male" required>
+
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Female" value="Female">
+
+        <label for="Others">Others</label>
+        <input type="radio" name="Gender" id="Others" value="Others"><br><br>
+
+        <b>Languages Known:</b></br>
+        <label for="english">English</label>
+        <input type="checkbox" id="english" value="english" name="lang">
+
+        <label for="Hindi">Hindi</label>
+        <input type="checkbox" id="Hindi" value="Hindi" name="lang">
+
+        <label for="French">French</label>
+        <input type="checkbox" id="French" value="French" name="lang"><br><br>
+
+        <label for="City"><b>City</b></label><br>
+        <select name="City" id="City" required>
+            <option value="" disabled selected>--Select City--</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        <input type="submit">&nbsp;<input type="reset">
+        </form>
+    </fieldset>
+</body>
+
+</html>
