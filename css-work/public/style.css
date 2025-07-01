@@ -1,0 +1,33 @@
+
+        /* define css selectors */
+        body {
+            background-image: url(../../Assignments/bird.gif);
+            background-repeat: no-repeat;
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(195, 208, 7);
+            border: 5px solid red;
+            color: white;
+            font-size: 18px;
+            margin: auto;
+            margin-top: 4px;
+            padding: 20px;
+            /* float: right; */
+            display: inline-block;
+            border-radius: 50% 50% 50% 50%;
+        }
+
+        hr {
+            height: 5px;
+            background-color: rgba(255, 184, 3, 0.556);
+        }
+
+        h2 {
+            text-align: center;
+            color: green;
+            text-transform: uppercase;
+        }
+   
