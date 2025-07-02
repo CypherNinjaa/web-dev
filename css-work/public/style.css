@@ -1,53 +1,95 @@
+/* type css selectors */
+body {
+	background-image: url(../../Assignments/bird.gif);
+	background-repeat: no-repeat;
+}
 
-        /* type css selectors */
-        body {
-            background-image: url(../../Assignments/bird.gif);
-            background-repeat: no-repeat;
-        }
+div {
+	height: 200px;
+	width: 200px;
+	background-color: rgb(195, 208, 7);
+	border: 5px solid red;
+	color: white;
+	font-size: 18px;
+	margin: auto;
+	margin-top: 4px;
+	padding: 20px;
+	/* float: right; */
+	display: inline-block;
+	border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 10px rgba(2, 209, 116, 0.5), 0 0 20px rgba(2, 209, 116, 0.5);
+}
 
-        div {
-            height: 200px;
-            width: 200px;
-            background-color: rgb(195, 208, 7);
-            border: 5px solid red;
-            color: white;
-            font-size: 18px;
-            margin: auto;
-            margin-top: 4px;
-            padding: 20px;
-            /* float: right; */
-            display: inline-block;
-            border-radius: 50% 50% 50% 50%;
-        }
+hr {
+	height: 5px;
+	background-color: rgba(255, 184, 3, 0.556);
+}
 
-        hr {
-            height: 5px;
-            background-color: rgba(255, 184, 3, 0.556);
-        }
+h2 {
+	text-align: center;
+	color: green;
+	text-transform: uppercase;
+}
+/* Universal Selectors */
+* {
+	color: red;
+}
 
-        h2 {
-            text-align: center;
-            color: green;
-            text-transform: uppercase;
-        }
-   /* Universal Selectors */
-   *{
-    color: red;
-   }
+/* ID selector */
+#div-1 {
+	background-color: red;
+	border-color: aqua;
+}
 
-   /* ID selector */
-   #div-1{
-    background-color: red;
-    border-color: aqua;
-   }
-
-   /* class selector */
-   .division-1{
-    background-color: tomato;
-    border-color: chartreuse;
-   }
-   .division-2{
-    background-color: rgb(0, 255, 179);
-    border-color: rgb(15, 126, 223);
-    font-size: x-large;
-   }
+/* class selector */
+.division-1 {
+	background-color: tomato;
+	border-color: chartreuse;
+}
+.division-2 {
+	background-color: rgb(0, 255, 179);
+	border-color: rgb(15, 126, 223);
+	font-size: x-large;
+}
+/* selector for basic menu */
+ul {
+	list-style-type: none;
+	padding: 0;
+	background-color: black;
+	border-radius: 10px;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+/* menu items */
+ul > li {
+	display: inline;
+	margin-right: 10px;
+}
+/* link styles */
+ul a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+/* css pseudo selectors */
+ul a:hover {
+	text-transform: uppercase;
+	color: yellow;
+}
+/* adjacent sibling selector */
+h3 + p {
+	color: blue;
+	font-size: 20px;
+}
+/* general sibling selector */
+h3 ~ p {
+	color: green;
+	font-size: 20px;
+    font-weight: bold;
+}
+/* adjacent sibling selector */
+h3 + p {
+	color: blue;
+	font-size: 20px;
+}
