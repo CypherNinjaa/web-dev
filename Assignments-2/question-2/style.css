@@ -30,7 +30,9 @@ p {
 	color: #666;
 	margin-bottom: 20px;
 }
-#signup-form,#login-form {
+#signup-form,
+#login-form,
+#reset-password {
 	background-color: #f9f9f9;
 	padding: 20px;
 	border-radius: 5px;
@@ -47,6 +49,14 @@ input[type="password"] {
 	border-radius: 4px;
 }
 input[type="submit"] {
+	border-radius: 4px;
+	background-color: blue;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+}
+.signup {
 	border-radius: 4px;
 	background-color: blue;
 	color: white;
