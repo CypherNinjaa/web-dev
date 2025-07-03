@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all-form-element</title>
+</head>
+
+<body>
+    <h1>All Form Elements</h1>
+    <form action="#" method="">
+        <input type="search" id="search" name="search" placeholder="Search..." autocomplete="off" required
+            pattern="\w{3,}"><br><br>
+        <label for="text">Text Input:</label>
+        <input type="text" id="text" name="text" required oninvalid="this.setCustomValidity('Please enter some text')"
+            oninput="this.setCustomValidity('')"><br><br>
+
+        <label for="email">Email Input:</label>
+        <input type="email" id="email" name="email" required
+            oninvalid="this.setCustomValidity('Please enter a valid email')"
+            oninput="this.setCustomValidity('')"><br><br>
+
+        <label for="password">Password Input:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="number">Number Input:</label>
+        <input type="number" id="number" name="number"><br><br>
+
+        <label for="telephone">Telephone Input:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="000-000-000" pattern="\d{3}-\d{3}-\d{3}"><br><br>
+
+
+        <label for="date">Date Input:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="color">Color Input:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="file">File Input:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="time">Time Input:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <label for="week">Week Input:</label>
+        <input type="week" id="week" name="week"><br><br>
+
+        <label for="month">Month Input:</label>
+        <input type="month" id="month" name="month"><br><br>
+
+        <label for="url">URL Input:</label>
+        <input type="url" id="url" name="url" ><br><br>
+
+        <label for="textarea">Textarea:</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br><br>
+
+        <!-- data list -->
+        <input list="cities" name="city" id="city" placeholder="Select a city">
+        <datalist id="cities">
+            <option value="New York">
+            <option value="Los Angeles">
+            <option value="Chicago">
+            <option value="Houston">
+            <option value="Phoenix">
+        </datalist><br><br>
+
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="yes"><br><br>
+
+
+
+        <input type="submit" value="Submit" formnovalidate formaction="./updateurl"><br><br>
+        <BUtton type="submit">submit</BUtton>
+
+    </form>
+    <hr>
+    <section>
+        <article>
+            <h3>Audio/Video</h3><br>
+            <audio autoplay controls>
+                <source src="./media/krishna_flute.mp3" type="audio/mp3">
+            </audio>
+        </article>
+        <article>
+            <video autoplay controls width="300px" height="250px">
+                <source src="./media/tesla-optimus.mp4" type="video/mp4">
+            </video>
+        </article>
+    </section>
+</body>
+
+</html>
