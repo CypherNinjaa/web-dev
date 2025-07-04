@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstarp-demo</title>
-    <link rel="stylesheet" href ="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <h1 class="text-center text-uppercase text-success">Working with bootstrap and html</h1>
     <hr>
@@ -17,5 +19,189 @@
     <div class="container-fluid bg-primary">
         container-fluid region
     </div>
+    <!-- width,height,margin,pading class -->
+    <h2>width/height/Margin/Padding</h2>
+    <div class="container bg-primary p-1">
+        <div class="bg-danger w-25 m-1">div-1</div>
+        <div class="bg-warning w-50 m-1">div-2</div>
+        <div class="bg-info w-75 m-1">div-3</div>
+        <div class="bg-success w-100 m-1">div-4</div>
+    </div>
+
+    <div class="container bg-primary p-1 my-1 d-flex " style="height: 200px;">
+        <div class="bg-danger w-25 m-1 h-25">div-1</div>
+        <div class="bg-warning w-25 m-1 h-50">div-2</div>
+        <div class="bg-info w-25 m-1 h-75">div-3</div>
+        <div class="bg-success w-25 m-1 ">div-4</div>
+    </div>
+
+    <!-- text formatting -->
+    <div class="container">
+        <h2>Text Formatting</h2>
+        <p class="text-primary">This is a primary text</p>
+        <p class="text-secondary">This is a secondary text</p>
+        <p class="text-success">This is a success text</p>
+        <p class="text-danger">This is a danger text</p>
+        <p class="text-warning">This is a warning text</p>
+        <p class="text-info">This is an info text</p>
+        <p class="text-light bg-dark">This is a light text on dark background</p>
+        <p class="text-dark bg-light">This is a dark text on light background</p>
+        <p class="text-body">This is a body text</p>
+        <p class="text-muted">This is a muted text</p>
+        <p class="text-white bg-dark">This is a white text on dark background</p>
+        <p class="text-black bg-light">This is a black text on light background</p>
+        <p class="text-uppercase">This is an uppercase text</p>
+    </div>
+
+    <!-- bootstrap table -->
+    <h2 class="text-center text-uppercase text-info">Bootstrap Table</h2>
+    <div class="container bg-primary p-0 table-responsive">
+        <table class="table table-bordered table-striped table-hover table-dark ">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>vikash</td>
+                    <td>24</td>
+                    <td>Darbhanga</td>
+                    <td>1</td>
+                    <td>vikash</td>
+                    <td>24</td>
+                    <td>Darbhanga</td>
+                    <td>1</td>
+                    <td>vikash</td>
+                    <td>24</td>
+                    <td>Darbhanga</td>
+                    <td>1</td>
+                    <td>vikash</td>
+                    <td>24</td>
+                    <td>Darbhanga</td>
+                   
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dp</td>
+                    <td>25</td>
+                    <td>Purnia</td>
+                    <td>2</td>
+                    <td>Dp</td>
+                    <td>25</td>
+                    <td>Purnia</td>
+                    <td>2</td>
+                    <td>Dp</td>
+                    <td>25</td>
+                    <td>Purnia</td>
+                    <td>2</td>
+                    <td>Dp</td>
+                    <td>25</td>
+                    <td>Purnia</td>
+                  
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sonu</td>
+                    <td>20</td>
+                    <td>Patna</td>
+                    <td>3</td>
+                    <td>Sonu</td>
+                    <td>20</td>
+                    <td>Patna</td>
+                    <td>3</td>
+                    <td>Sonu</td>
+                    <td>20</td>
+                    <td>Patna</td>
+                    <td>3</td>
+                    <td>Sonu</td>
+                    <td>20</td>
+                    <td>Patna</td>
+                   
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Hari om</td>
+                    <td>30</td>
+                    <td>Danapur</td>
+                    <td>4</td>
+                    <td>Hari om</td>
+                    <td>30</td>
+                    <td>Danapur</td>
+                    <td>4</td>
+                    <td>Hari om</td>
+                    <td>30</td>
+                    <td>Danapur</td>
+                    <td>4</td>
+                    <td>Hari om</td>
+                    <td>30</td>
+                    <td>Danapur</td>
+                  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- diplay classes -->
+    <h2>Display Classes</h2>
+    <p class="display-1">this is display-1 paragraph</p>
+    <p class="display-2">this is display-2 paragraph</p>
+    <p class="display-3">this is display-3 paragraph</p>
+    <p class="display-4">this is display-4 paragraph</p>
+    <p class="display-5">this is display-5 paragraph</p>
+    <p class="display-6">this is display-6 paragraph</p>
+    <br>
+    <h2 class="text-center text-uppercase text-info">bootstrap Grid System</h2>
+    <div class="container">
+        <div class="row bg-primary" style=" height:150px;">
+            <div class="col-md-2 col-sm-4 bg-danger">
+                <div class="h-100 ">Left Side Bar</div>
+            </div>
+            <div class="col-md-8 col-sm-4 bg-secondary">
+                <div class="h-100 ">Main Content Area</div>
+            </div>
+            <div class="col-md-2 col-sm-4 bg-warning">
+                <div class="h-100 ">Right Side Bar</div>
+            </div>
+        </div>
+        <div class="row bg-primary" style=" height:150px;">
+            <div class="col-md-2 col-sm-4 bg-danger">
+                <div class="h-100 ">Left Side Bar</div>
+            </div>
+            <!-- <div class="col-md-8 col-sm-4 bg-secondary">
+                <div class="h-100 ">Main Content Area</div>
+            </div> -->
+            <div class="col-md-2 col-sm-4 bg-warning offset-md-8 offset-sm-4">
+                <div class="h-100 ">Right Side Bar</div>
+            </div>
+        </div>
+        <div class="row bg-primary" style=" height:150px;">
+            <!-- <div class="col-md-2 col-sm-4 bg-danger">
+                <div class="h-100 ">Left Side Bar</div>
+            </div> -->
+            <div class="col-md-8 col-sm-4 bg-secondary offset-md-2 offset-sm-4">
+                <div class="h-100 ">Main Content Area</div>
+            </div>
+            <!-- <div class="col-md-2 col-sm-4 bg-warning">
+                <div class="h-100 ">Right Side Bar</div>
+            </div> -->
+        </div>
+    </div>
 </body>
+
 </html>
