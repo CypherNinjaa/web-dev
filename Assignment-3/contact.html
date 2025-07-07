@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MyBlog</title>
+    <link rel="stylesheet" href="./question-3.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-section navbar-left">
+                <div class="logo">
+                    <h2>MyBlog</h2>
+                </div>
+            </div>
+            <div class="navbar-section navbar-center">
+                <nav>
+                    <ul>
+                        <li><a href="question-3.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="./contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navbar-section navbar-right">
+                <span class="search-icon">
+                    <svg height="20" width="20" viewBox="0 0 20 20">
+                        <circle cx="9" cy="9" r="7" stroke="#fff" stroke-width="1.5" fill="none" />
+                        <line x1="14" y1="14" x2="18" y2="18" stroke="#fff" stroke-width="1.5" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <p>I'd love to hear from you! Get in touch using the form below.</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Send me a message</h2>
+                    <p>Have a question, suggestion, or just want to say hello? Fill out the form below and I'll get back to you as soon as possible.</p>
+                    
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me what's on your mind..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h3>Other Ways to Reach Me</h3>
+                        <p><strong>Email:</strong><a href="mailto:hello@myblog.com">hello@myblog.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                        <p><strong>Location:</strong> <a href="https://www.google.com/maps/place/India,+patna">India, Patna</a></p>
+                        <p><strong>Response Time:</strong> Usually within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MyBlog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
