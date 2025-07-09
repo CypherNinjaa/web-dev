@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <!-- 6. Write a program to display Fibonacci series  -->
+    <script>
+        let num = parseInt(prompt("Enter the number of terms: "));
+
+        let a = 0, b = 1, sum;
+        document.writeln("<h1>Fibonacci Series up to " + num + " terms</h1><br>");
+
+        if (isNaN(num) || num <= 0) {
+            document.writeln("Please enter a valid positive integer.");
+        } else {
+            for (let i = 1; i <= num; i++) {
+                document.writeln("Term " + i + ": " + a + "<br>");
+                sum = a + b;
+                a = b;
+                b = sum;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

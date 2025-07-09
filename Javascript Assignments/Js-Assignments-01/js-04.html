@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- 4. Implement a calculator using switch case
+(Take two numbers and also operator from user)  -->
+    <script>
+        let num1 = parseInt(prompt("Enter the 1st number : "));
+        let num2 = parseInt(prompt("Enter the 2nd number : "));
+        let operator = prompt("Enter the Operator : ");
+
+        if (isNaN(num1) || isNaN(num2)) {
+            throw new Error("Please Enter a valid Integer.");
+        }
+        if (operator !== "+" && operator !== "-" && operator !== "*" && operator !== "/" && operator !== "%") {
+            throw new Error("Please Enter a Valid Operator");
+        }
+        switch (operator) {
+            case "+":
+                let sum = num1 + num2;
+                document.writeln("Sum : ", sum);
+                break;
+            case "-":
+                let sub = num1 - num2;
+                document.writeln("After subtracting we get : ", sub);
+                break;
+
+            case "*":
+                let multi = num1 * num2;
+                document.writeln("After Multiplication we get : ", multi);
+                break;
+
+            case "/":
+                if (num2 === 0) {
+                    document.writeln("Division is not possible with 0.");
+                    break;
+                } else {
+                    let Divide = num1 / num2;
+                    document.writeln("After Division we get : ", Divide);
+                    break;
+                }
+                break;
+            case "%":
+                if (num2 === 0) {
+                    document.writeln("Modulo is not possible with 0.");
+                    break;
+                } else {
+                    let Modulo = num1 % num2;
+                    document.writeln("Reminder : ", Modulo);
+                    break;
+                }
+
+        }
+    </script>
+</body>
+
+</html>
