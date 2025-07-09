@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-01</title>
+</head>
+
+<body>
+    <!-- 1. Take three number input and print the greatest number on the page (using if else) -->
+    <script>
+        let num1 = prompt("Enter the 1st number : ");
+        let num2 = prompt("Enter the 2nd number : ");
+        let num3 = prompt("Enter the 3rd number : ");
+        if (num1 > num2 && num1 > num3) {
+            document.writeln(num1, " is greater!");
+        } else if (num2 > num1 && num2 > num3) {
+            document.writeln(num2, " is greater!");
+        } else if (num3 > num1 && num3 > num2) {
+            document.writeln(num3, " is greater!");
+        } else {
+            document.writeln("All numbers are equal!");
+        }
+
+    </script>
+</body>
+
+</html>

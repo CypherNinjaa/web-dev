@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student List</title>
+</head>
+
+<body>
+    <!-- 2. Take 5 student name from user and show in Ordered List format (using prompt and variables) -->
+    <script>
+        document.writeln("<h1>Student List</h1>");
+        let name = prompt("Enter the student name (seprated by space): ");
+        let word = "";
+        document.writeln("<ol>")
+        for (let i = 0; i < name.length; i++) {
+            if (name[i] != " ") {
+                word = word + name[i]
+            }
+            else {
+                if (word != "") {
+                    document.writeln("<li>", word, "</li> <br>")
+                    word = "";
+                }
+            }
+        }
+        if (word != "") {
+            document.writeln("<li>", word, "</li>")
+        }
+        document.writeln("</ol>")
+    </script>
+</body>
+
+</html>

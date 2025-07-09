@@ -100,11 +100,3 @@
 // let num = parseInt(prompt("Enter the number: "));
 // fact(num);
 
-str = "hello this is my string";
-let count = 0;
-for (let index = 0; i <= str.length - 1; index++) {
-	if (str[i]== " ") {
-        count++;
-    }
-}
-document.writeln(count);

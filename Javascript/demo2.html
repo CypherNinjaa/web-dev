@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./java.js"></script>
 </head>
+
 <body>
-    
+    <!-- <script>
+
+        let str = prompt("enter your string: ");
+        let count = 0;
+        for (let i = 0; i <= str.length - 1; i++) {
+            if (str[i] == " ") {
+                count++;
+            }
+        }
+        document.writeln(count);
+    </script> -->
+    <!-- <script>
+    let name ="vikash";
+    let age = 21;
+    str = `hello ${name}, your age is ${age}`;
+    document.writeln(str);
+   </script> -->
+
+    <!-- <script>
+        let str = prompt("enter the string: ");
+        let rvs = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+            rvs = rvs + str[i];
+        }
+        if (rvs == str) {
+            document.writeln("it is palindrome");
+        }
+        else{
+            document.writeln(str," is not palindrome");
+        }
+    </script> -->
+
+    <!-- <script>
+        let str2 = prompt("enter the string: ");
+        let check = 0;
+        let firstind = 0;
+        let lastind = str2.length - 1;
+        while (condition) {
+        }
+    </script> -->
+    <!-- 
+    <script>
+        let car = ["i10", "i20", "i30"]
+        // for (let i = 0; i < car.length; i++) {
+        //     document.writeln(car[i])
+        // }
+
+        // arrow function 
+        // car.forEach(element => document.writeln(element ,"<br>"))
+
+        // document.writeln(car.toString())
+        car.push(60);
+        document.writeln(car, "<br>")
+        car.pop(3);
+        document.writeln(car, "<br>")
+    </script> -->
+
+    <!-- question -> 6 -->
+    <!-- <script>
+        let arr = ["v", "i", "k", "a", "s", "h"];
+        let a = getfirstelement(arr);
+        function getfirstelement(arr) {
+            return arr[0];
+        }
+        document.writeln(a);
+    </script> -->
+
+    <!-- question -> 7 -->
+
+    <!-- <script>
+        const arr = ["v","i","k","a","s","h"];
+        let a = getfirstelement(arr);
+        function getfirstelement(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                document.writeln(arr[i]);
+
+            }
+        }
+
+    </script> -->
+
+    <!-- <script>
+        const arr = ["v", "i", "k", "a", "s", "h"];
+        let a = getfirstelement(arr);
+        function getfirstelement(arr) {
+            // car.forEach(element => document.writeln(element ,"<br>"))
+            arr.forEach(ele => document.writeln(ele))
+        }
+    </script> -->
+
+    <!-- <script>
+        //  map  
+        let numbers = [1, 2, 3, 4, 5, 6];
+        let results = numbers.map(num => num + 5);
+        document.writeln("map array => ", results, "<br>");
+        //  filter 
+        let filterarray = numbers.filter(ele => ele % 2 == 0);
+        document.writeln("filtered array => ", filterarray, "<br>");
+
+        // reduce 
+        let sum = numbers.reduce((acc, num) => acc + num, 0)
+        document.writeln("Reduced array => ", sum);
+
+    </script> -->
+
+    <!-- <script>
+        let arr = [15, 18, 19, 20, 25, 40]
+        let a = age(arr);
+        // filter array ele>18 
+        // multiply by 2 for the filtered value
+        // return the sum of those numbers
+        function age(arr) {
+            let filteredarray = arr.filter(ele => ele > 18);
+            document.writeln("filter > 18 => ",filteredarray,"<br>")
+
+            let multiply = filteredarray.map(num => num * 2);
+            document.writeln("mutliply by 2 => ",multiply, "<br>")
+            
+            let sum = multiply.reduce((acc, nums) => acc + nums, 0);
+            document.writeln("Sum => ",sum, "<br>")
+        }
+    </script> -->
+    <!-- <script>
+        let student = {
+            name: "vikash",
+            age: 21,
+            fullname: function(){
+                console.log("this is my name",this.name)
+            }
+        }
+        student.fullname()
+        console.log(student.name);
+        student.dpt="AIIt"
+        delete student.dpt
+       console.log(student.dpt);
+    </script> -->
+    <script>
+        let person = {
+            name: "viaksh",
+            age: 21,
+            city: "patna",
+            printperson: function () {
+                document.writeln("name => ", this.name, "<br>")
+                document.writeln("city => ", this.city, "<br>")
+                document.writeln("age => ", this.age, "<br>")
+                document.writeln("Gender => ", this.gender, "<br>")
+            }
+        }
+        person.gender = "male"
+        person.printperson();
+        delete person.gender;
+        person.printperson();
+    </script>
 </body>
+
 </html>
