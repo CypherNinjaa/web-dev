@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<script>
+    function buttonclick() {
+        document.getElementById("demo").innerHTML = "Final value"
+    }
+    function removemouse() {
+        document.getElementById("demo").innerHTML = "Initial value"
+    }
+    document.getElementById("mybutton").addEventListener("click", function () { alert("button clicked") })
+</script>
+
+<body>
+    <p id="demo">Initial value</p>
+    <button id="mybutton" onmouseover="buttonclick()" onmouseout="removemouse()" >click here</button>
+
+</body>
+
+</html>

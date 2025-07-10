@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validateform(event) {
+            event.preventDefault(); // prevent default submit form
+            let x = document.forms["myform"]["fname"].value;
+            let pass = document.forms["myform"]["pwd"].value;
+            let passd = document.forms["myform"]["pwdc"].value;
+
+            if (x == "") {
+                alert("please enter the name");
+                return false;
+            }
+            if (pass != passd) {
+                alert("Password doesn't matched")
+                return false;
+            }
+            return true;
+        }
+        function upper() {
+            let x = document.forms["myform"]["fname"].value;
+            let upperCaseString = x.toUpperCase();
+            document.forms["myform"]["fname"].value = upperCaseString;
+        }
+        function light() {
+            document.getElementById("name").style.backgroundColor = "yellow"
+        }
+        function blurs() {
+            document.getElementById("name").style.backgroundColor = "white"
+        }
+
+    </script>
+</head>
+
+<form name="myform" onsubmit="return validateform(event)">
+    <label id="fnames">Name:</label>
+    <input type="text" name="fname" id="name" placeholder="Enter your name" onfocus="light()" onblur="blurs()" onchange="upper()"><br><br>
+
+    <label for="">Enter the password</label>
+    <input type="password" name="pwd" id="name" placeholder="Enter your password"><br><br>
+
+    <label for="">Confirm the password</label>
+    <input type="password" name="pwdc" id="name" placeholder="Enter your password"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+
+</html>
