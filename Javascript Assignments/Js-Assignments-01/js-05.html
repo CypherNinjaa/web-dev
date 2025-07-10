@@ -9,7 +9,26 @@
 
 <body>
     <script>
-        // 5. Write a program to find the sum of squares of even numbers upto N (accept N from user). If the square crosses 5000 break the loop. (i.e. at any given point, if the square of any number is greater than 5000, stop execution)
+        /* 5. Write a program to find the sum of squares of even numbers upto N (accept N from user). If the square crosses 5000 break the loop. 
+        (i.e. at any given point, if the square of any number is greater than 5000, stop execution) */
+        let num = parseInt(prompt("Enter the number : "));
+        let square, sum = 0;
+        if (isNaN(num)) {
+            alert("Please enter a valid integer.");
+        }
+        for (let i = 0; i <= num; i++) {
+            if (i % 2 == 0) {
+                square = i * i;
+                sum += square;
+                if (sum > 5000) {
+                    alert("Sum of Square Crosses 5K limit");
+                    throw "Sum of Square Crosses 5K limit";
+                    break;
+                }
+            }
+        }
+        document.writeln("sum of squares upto ", num, " is => ", sum);
+
 
     </script>
 </body>
