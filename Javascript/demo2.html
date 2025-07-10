@@ -145,7 +145,8 @@
         delete student.dpt
        console.log(student.dpt);
     </script> -->
-    <script>
+
+    <!-- <script>
         let person = {
             name: "viaksh",
             age: 21,
@@ -161,6 +162,55 @@
         person.printperson();
         delete person.gender;
         person.printperson();
+    </script> -->
+
+    <!-- <script>
+        str = "hello this is my string";
+        let a = str.slice(0,4);
+        document.writeln(a);
+    </script> -->
+
+    <!-- prime number checking -->
+    <!-- <script>
+        let n = parseInt(prompt("Enter the number : "));
+        let isprime = 1;
+        if (n <= 1) {
+            isprime = 0;
+        }
+        for (let i = 2; i <= n / 2; i++) {
+            if (n % i == 0) {
+                isprime = 0;
+                break;
+            }
+        }
+        if (isprime) {
+            document.writeln("It is prime number");
+        } else {
+            document.writeln("It is not prime number");
+        }
+    </script> -->
+    <!-- <h1 id="header">this is my header</h1>
+    <p id="para">this is paragraph</p>
+    <p class="para1">this is paragraph 1</p>
+    <p class="para1">this is paragraph 2</p>
+
+    <script>
+        console.log(document.getElementById("header"));
+        console.log(document.getElementById("para"));
+        document.getElementById("header").style.backgroundColor = "yellow"
+        // document.getElementsByClassName("para1")
+        console.log(document.getElementsByClassName("para1")[1])
+        console.log(document.getElementsByTagName(p))
+    </script> -->
+    <!-- createb a paragraph and chnage its text 
+ give class name -> fontcolor
+ give id name -> innercontent
+ change it by both -->
+    <p id="paraid">this is paragrapgh 1</p>
+    <p class="paraclass">this is paragraph 2</p>
+    <script>
+        document.getElementById("paraid").innerHTML = "paragragh changed";
+        document.getElementsByClassName("paraclass")[0].style.color = "yellow";
     </script>
 </body>
 
