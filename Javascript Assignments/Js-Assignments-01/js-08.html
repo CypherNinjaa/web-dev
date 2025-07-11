@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern printing</title>
+</head>
+
+<body>
+    <!-- 8. Pattern Printing:
+Write a JavaScript program that uses nested for loops to print the following pattern:
+*
+**
+***
+****
+***** -->
+    <h1>Pattern printing</h1>
+    <script>
+        let rows = 5;
+
+        for (let i = 1; i <= rows; i++) {
+            let line = "";
+            for (let j = 1; j <= i; j++) {
+                line += "*";
+            }
+            document.writeln(line + "<br>");
+        }
+    </script>
+</body>
+
+</html>

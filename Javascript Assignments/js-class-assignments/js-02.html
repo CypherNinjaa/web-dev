@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaindrome</title>
+</head>
+
+<body>
+    <!-- 
+Que 2:
+Write a function isPalindrome that takes a string and returns true if the string is a palindrome, and false otherwise.
+ -->
+    <script>
+        let str = prompt("Enter the String : ");
+        let temp = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+            temp += str[i];
+        }
+        if (temp == str) {
+            document.writeln(str, " is palindrome");
+        } else {
+            document.writeln(str, " is not palindrome");
+        }
+    </script>
+</body>
+
+</html>

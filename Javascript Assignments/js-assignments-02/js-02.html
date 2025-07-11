@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+
+<body>
+    <!-- Que 2:
+Create a dummy array of objects which will have following properties: (actual key name can be different)
+product name, price, discount percentage and availability. 
+Your task is to calculate total cart amount as per following instructions:
+a. filter out available items
+b. use map to calculate actual item amount after applying discount
+c. use reduce to find out total amount -->
+    <script>
+        let products = [
+            {
+                name: "Laptop",
+                price: 45000,
+                discount: 10,         // in percentage
+                available: true
+            },
+            {
+                name: "Smartphone",
+                price: 18000,
+                discount: 5,
+                available: false
+            },
+            {
+                name: "Headphones",
+                price: 2500,
+                discount: 15,
+                available: true
+            },
+            {
+                name: "Keyboard",
+                price: 900,
+                discount: 20,
+                available: true
+            },
+            {
+                name: "Smart Watch",
+                price: 3000,
+                discount: 0,
+                available: false
+            }
+        ];
+        // Filter available products
+        let availableProducts = products.filter(product => product.available);
+       
+        // Map to calculate price after discount
+        let discountedPrices = availableProducts.map(product => product.price * (1 - product.discount / 100));
+        
+        // Reduce to get total  amount
+        let totalAmount = discountedPrices.reduce((sum, price) => sum + price, 0);
+
+    </script>
+</body>
+
+</html>

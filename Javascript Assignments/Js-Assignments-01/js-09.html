@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern-printing</title>
+</head>
+
+<body>
+    <!-- 9. Generate a Pattern:
+Write a JavaScript program that uses nested for loops to generate the following pattern:
+1
+12
+123
+1234
+12345 -->
+    <h1>Pattern printing</h1>
+    <script>
+        let rows = 5
+        for (let i = 1; i <= rows; i++) {
+            let num = "";
+            for (let j = 1; j <= i; j++) {
+                num += j;
+            }
+            document.writeln(num + "<br>");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound interest</title>
+</head>
+
+<body>
+    <!-- 7. Display total amount and total compound interest on web page (use document.write())
+p = Principal,
+r = Rate of Interest,
+t = period in years
+The values used in the example in the following figure are as follows:
+(do not take input from user)
+P = 1000, t = 1, r = 10 
+(note: in this question, use ** operator, not Math.pow) -->
+    <h1>Compound Interest</h1>
+    <script>
+        let p, r, t, n;
+        p = 1000;
+        r = 0.10;   // 10% is decimal is equal to 0.10
+        t = 1;
+        n = 1;
+        let A = p * (1 + (r / n)) ** (n * t);
+        document.writeln("A = &#8377;", A, "<br>");
+        let CI = A - p;
+        document.writeln("CI = &#8377;", CI);
+    </script>
+</body>
+
+</html>
