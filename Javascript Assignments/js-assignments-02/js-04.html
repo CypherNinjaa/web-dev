@@ -12,5 +12,19 @@
 Array From Range:
 Write a function arrayFromRange that takes a start and end number and returns an array containing all numbers in that range (inclusive). -->
 </body>
+<script>
+
+    function arrayFromRange(start, end) {
+        let result = [];
+        for (let i = start; i <= end; i++) {
+            result.push(i);
+        }
+        return result;
+    }
+    let start = parseInt(prompt("Enter the starting value : "))
+    let end = parseInt(prompt("Enter the ending value : "))
+    document.writeln(arrayFromRange(start, end));
+    document.writeln("Array = [",result, "]");
+</script>
 
 </html>

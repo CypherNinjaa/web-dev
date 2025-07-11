@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        thead {
+            background-color: #388E3C;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Que 5:
+Take fruit parameters (name, rate and quantity) and store them in array. Display this in table format with headers using array -->
+</body>
+<h1 align="center">Generate your bill</h1>
+<table id="fruitTable">
+    <thead>
+    <th>Fruit Name</th>
+    <th>Rate (₹)</th>
+    <th>Quantity (kg)</th>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <tfoot id="total">
+
+    </tfoot>
+</table>
+<script>
+    let fruits = [
+        { name: "Apple", rate: 120, quantity: 10 },
+        { name: "Banana", rate: 40, quantity: 24 },
+        { name: "Grapes", rate: 50, quantity: 14 },
+        { name: "Mango", rate: 100, quantity: 4 },
+        { name: "Orange", rate: 70, quantity: 20 },
+
+    ];
+    let tbody = document.querySelector("#fruitTable tbody");
+
+    fruits.forEach(fruit => {
+        let row = `<tr>
+            <td>${fruit.name}</td>
+            <td>${fruit.rate}</td>
+            <td>${fruit.quantity}</td>
+        </tr>`
+        tbody.innerHTML += row;
+    })
+    let total = fruits.reduce((acc, fruit) => acc + fruit.rate, 0);
+    let tfoot = document.getElementById("total");
+    tfoot.innerHTML = `<tr><td colspan="3">Total: ₹${total}</td></tr>`;
+
+</script>
+
+</html>
