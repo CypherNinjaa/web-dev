@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-Await</title>
+</head>
+
+<body>
+    <script>
+
+        let getresult = async () => {
+            let num = 2;
+            let result = await check(num);
+            return result;
+        }
+        function check(num) {
+            return new Promise((resolve, reject) => {
+                if (num % 2 == 0) {
+                    resolve("even");
+                } else {
+                    reject("odd");
+                }
+            });
+        }
+        getresult().then((result) => {
+            console.log("it is ", result);
+        }).catch((err) => {
+            console.log("it is ", err);
+        });
+    </script>
+</body>
+
+</html>

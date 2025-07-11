@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+
+<body>
+    <script>
+        let checkeven = new Promise((resolve, reject) => {
+            let number = 3;
+            if (number % 2 != 0) {
+                resolve("the number is odd!");
+            } else {
+                reject("the number is even")
+            }
+        })
+
+        checkeven.then((message) => {
+            console.log(message)
+        }).catch((err) => {
+            console.error(err);
+        });
+    </script>
+</body>
+
+</html>
