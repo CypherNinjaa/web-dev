@@ -9,6 +9,7 @@ var mycalc = {
 	multp: function (num1, num2) {
 		return num1 * num2;
 	},
+	
 };
 //module.exports = { mycalc };
 module.exports = mycalc;
