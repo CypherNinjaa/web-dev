@@ -1,0 +1,65 @@
+<!-- Que 1:
+Create a web Page and fetch Employee details from text box and store in array of Objects:
+Employee Properties: ID, Name, salary
+Create three buttons:
+a. Save - Save button to store
+b. Total Salary - Total Salary button to calculate summation of all employee salary
+c. Display - Display will show all employees in table format -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Manager</title>
+</head>
+
+<body>
+    <h2>Employee Management</h2>
+    <pre>
+    <form action="">
+        <input type="text" id="employeeName" placeholder="Enter Employee Name" required>
+        <input type="number" id="employeeSalary" placeholder="Enter Employee Salary" required>
+        <input type="text" id="employeeId" placeholder="Enter Employee ID" >
+        <button type="button" onclick="saveEmployee()">Save</button>
+        <button type="button" onclick="calculateTotalSalary()">Total Salary</button>
+        <button type="button" onclick="displayEmployees()">Display</button>
+    </form>
+</pre>
+    <script>
+        let employees = [];
+        function saveEmployee() {
+            const name = document.getElementById("employeeName").value;
+            const salary = document.getElementById("employeeSalary").value;
+            const id = document.getElementById("employeeId").value;
+            const employee = { id, name, salary };
+            employees.push(employee);
+            document.getElementById("employeeName").value = "";
+            document.getElementById("employeeSalary").value = "";
+        }
+
+        function calculateTotalSalary() {
+            const totalSalary = employees.reduce((sum, emp) => sum + parseFloat(emp.salary), 0);
+            alert("Total Salary: " + totalSalary);
+        }
+
+        function displayEmployees() {
+            const table = document.createElement("table");
+            const header = table.createTHead();
+            const headerRow = header.insertRow();
+            headerRow.insertCell().innerText = "ID";
+            headerRow.insertCell().innerText = "Name";
+            headerRow.insertCell().innerText = "Salary";
+            const body = table.createTBody();
+            employees.forEach(emp => {
+                const row = body.insertRow();
+                row.insertCell().innerText = emp.id;
+                row.insertCell().innerText = emp.name;
+                row.insertCell().innerText = emp.salary;
+            });
+            document.body.appendChild(table);
+        }
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 4. Email Validation
+	Write a JavaScript function to validate that an input field with the id "email" contains a valid email address.
+    Display an error message if the email is invalid. -->
+    <form action="">
+        <input type="text" id="email"><br>
+        <span id="errorMessage" style="color: red; display: none;">Email should contain '@'</span><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("email").addEventListener("blur", function () {
+            const email = this.value;
+            let message = document.getElementById("errorMessage");
+            if (!email.includes("@")) {
+                message.style.display = "inline";
+            } else {
+                message.style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!--	Write a JavaScript function to validate that a text input field with the id "username" is not empty.
+     If it is empty, display an error message below the input field.  -->
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+     </head>
+     <body>
+        <form id="myForm">
+           <label for="username">Username:</label>
+           <input type="text" id="username" name="username">
+           <br>
+           <span id="errormessage" style="color: red; display: none;">This field is required.</span>
+           <br>
+           <button type="submit">Submit</button>
+        </form>
+
+        <script>
+           document.getElementById("myForm").addEventListener("submit", function(event) {
+               event.preventDefault(); // Prevent form submission
+               const username = document.getElementById("username").value;
+               const errorMessage = document.getElementById("errormessage");
+
+               if (username.trim() === "") {
+                   errorMessage.style.display = "inline";
+               } else {
+                   errorMessage.style.display = "none";
+                  
+               }
+           });
+        </script>
+     </body>
+     </html>

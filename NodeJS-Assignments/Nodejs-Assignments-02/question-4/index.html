@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Change Logger</title>
+</head>
+
+<body>
+
+    <label>Type Something:</label>
+    <input type="text" id="myInput">
+
+    <script>
+        document.getElementById("myInput").addEventListener("input", function () {
+            console.log("Current value:", this.value);
+        });
+    </script>
+
+</body>
+
+</html>
