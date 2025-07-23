@@ -3,11 +3,14 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 const Users = require("./models/Users");
-
+const UserRoutes = require("./routes/UserRoutes");
 
 app.get("/", (req, res) => {
 	res.send("Hello vikash");
 });
+
+app.use(express.json());
+app.use("/api/users", UserRoutes);
 
 // Start the server first, then try to connect to database
 app.listen(PORT, () => {
