@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use("/api/users", UserRoutes);
 
+
 // Start the server first, then try to connect to database
 app.listen(PORT, () => {
 	console.log(`Server is running on http://localhost:${PORT}`);
